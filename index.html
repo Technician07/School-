@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kinder Garden Academy | Batch 2081</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+scroll-behavior:smooth;
+}
+
+section{
+min-height:100vh;
+padding:80px 10%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:25px;
+}
+
+h3{
+margin-top:20px;
+}
+
+p{
+line-height:1.6;
+max-width:800px;
+margin:10px auto;
+}
+
+img{
+max-width:80%;
+border-radius:10px;
+margin:20px 0;
+}
+
+.timer{
+display:flex;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.time-box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:110px;
+}
+
+.time-box span{
+display:block;
+font-size:28px;
+font-weight:bold;
+}
+
+.nav{
+margin-top:60px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+background:#38bdf8;
+color:black;
+}
+
+button:hover{
+background:#0ea5e9;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+width:100%;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:25px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO PAGE -->
+
+<section id="hero">
+
+<h1>Kinder Garden Academy</h1>
+<h2>Batch 2081</h2>
+
+<p>Time passed since we were together in class.</p>
+
+<div class="timer">
+
+<div class="time-box">
+<span id="years"></span>
+Years
+</div>
+
+<div class="time-box">
+<span id="days"></span>
+Days
+</div>
+
+<div class="time-box">
+<span id="hours"></span>
+Hours
+</div>
+
+<div class="time-box">
+<span id="minutes"></span>
+Minutes
+</div>
+
+<div class="time-box">
+<span id="seconds"></span>
+Seconds
+</div>
+
+</div>
+
+<div class="nav">
+<a href="#batch"><button>Enter Memories</button></a>
+</div>
+
+</section>
+
+
+<!-- BATCH PAGE -->
+
+<section id="batch">
+
+<h2>Batch 2081</h2>
+
+<img src="images/group.jpg">
+
+<p>
+Batch 2081 of Kinder Garden Academy was more than just a group of students.
+We shared laughter, challenges, dreams and unforgettable moments together.
+Our classrooms were not just places of study but spaces where friendships grew stronger.
+Those days taught us discipline, teamwork and courage for the future.
+Even though life will lead us to different destinations, the memories of this batch will remain forever.
+</p>
+
+<div class="nav">
+<a href="#hero"><button>⬅ Back</button></a>
+<a href="#memories"><button>Iconic Memories ➜</button></a>
+</div>
+
+</section>
+
+
+<!-- MEMORIES -->
+
+<section id="memories">
+
+<h2>Three Iconic Memories</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/tour.jpg">
+<h3>Tour Experience</h3>
+<p>
+Our school tour was one of the happiest moments of our school life.
+The journey was full of laughter, songs and beautiful views.
+Traveling together strengthened our friendship.
+Every photo and memory from that trip still brings smiles to our faces.
+</p>
+</div>
+
+<div class="card">
+<img src="images/hostel.jpg">
+<h3>Hostel Life</h3>
+<p>
+Hostel life during class 10 taught us independence and responsibility.
+We studied together, supported each other and shared unforgettable late night conversations.
+Those moments created strong friendships that will last forever.
+</p>
+</div>
+
+<div class="card">
+<img src="images/see.jpg">
+<h3>SEE Examination</h3>
+<p>
+The SEE exam was a milestone in our academic journey.
+We prepared together and encouraged each other during stressful days.
+That experience made us stronger and ready for the next chapter of life.
+</p>
+</div>
+
+</div>
+
+<div class="nav">
+<a href="#batch"><button>⬅ Back</button></a>
+<a href="#teachers"><button>Our Guiders ➜</button></a>
+</div>
+
+</section>
+
+
+<!-- TEACHERS -->
+
+<section id="teachers">
+
+<h2>Our Guiding Lights</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/prithvi.jpg">
+<h3>Prithvi Kunwar</h3>
+<p>Founder</p>
+</div>
+
+<div class="card">
+<img src="images/ramesh.jpg">
+<h3>Ramesh Mahara</h3>
+<p>Principal | Science & Maths</p>
+</div>
+
+<div class="card">
+<img src="images/rawat.jpg">
+<h3>Maha Singh Rawat</h3>
+<p>Computer Teacher</p>
+</div>
+
+<div class="card">
+<img src="images/suraj.jpg">
+<h3>Suraj Japrel</h3>
+<p>Optional Math</p>
+</div>
+
+<div class="card">
+<img src="images/pradeep.jpg">
+<h3>Pradeep Chaudhary</h3>
+<p>English Teacher</p>
+</div>
+
+<div class="card">
+<img src="images/amrit.jpg">
+<h3>Amrit Mahata</h3>
+<p>Childhood Teacher</p>
+</div>
+
+<div class="card">
+<img src="images/sher.jpg">
+<h3>Sher Shah</h3>
+<p>Nepali Teacher</p>
+</div>
+
+<div class="card">
+<img src="images/laxman.jpg">
+<h3>Laxman Mahata</h3>
+<p>Samajik Teacher</p>
+</div>
+
+<div class="card">
+<img src="images/damodar.jpg">
+<h3>Damodar Bhattrai</h3>
+<p>Teacher</p>
+</div>
+
+</div>
+
+<div class="nav">
+<a href="#memories"><button>⬅ Back</button></a>
+<a href="#students"><button>Our Batch ➜</button></a>
+</div>
+
+</section>
+
+
+<!-- STUDENTS -->
+
+<section id="students">
+
+<h2>We The Batch of 2081</h2>
+
+<div class="cards">
+
+<div class="card"><img src="images/alisha.jpg"><h3>Alisha Kunwar</h3></div>
+<div class="card"><img src="images/suborth.jpg"><h3>Suborth Kunwar</h3></div>
+<div class="card"><img src="images/shirish.jpg"><h3>Shirish Kunwar</h3></div>
+<div class="card"><img src="images/aayush.jpg"><h3>Aayush Budha</h3></div>
+<div class="card"><img src="images/somika.jpg"><h3>Somika Bhandari</h3></div>
+<div class="card"><img src="images/babita.jpg"><h3>Babita Rana</h3></div>
+<div class="card"><img src="images/tanka.jpg"><h3>Tanka Prasad Acharya</h3></div>
+<div class="card"><img src="images/nirdeshan.jpg"><h3>Nirdeshan Kunwar</h3></div>
+<div class="card"><img src="images/abhishek.jpg"><h3>Abhishek Kunwar</h3></div>
+<div class="card"><img src="images/anandi.jpg"><h3>Anandi Thapa</h3></div>
+<div class="card"><img src="images/dipika.jpg"><h3>Dipika Kunwar</h3></div>
+<div class="card"><img src="images/rejina.jpg"><h3>Rejina Kunwar</h3></div>
+
+</div>
+
+<div class="nav">
+<a href="#teachers"><button>⬅ Back</button></a>
+<a href="#final"><button>Final Tribute ➜</button></a>
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section id="final">
+
+<h2>Forever Our School</h2>
+
+<img src="images/final.jpg">
+
+<p>
+The journey of Batch 2081 at Kinder Garden Academy will always remain a beautiful chapter of our lives.
+Our teachers guided us, our friends supported us and our school shaped our dreams.
+Though we will walk different paths in the future, the memories of these classrooms will stay forever.
+This website stands as a tribute to our friendship and our unforgettable school life.
+</p>
+
+<div class="nav">
+<a href="#students"><button>⬅ Back</button></a>
+</div>
+
+</section>
+
+
+<footer>
+Created with ❤️ by Nir Kunwar for Batch 2081
+</footer>
+
+
+<script>
+
+const startDate = new Date("March 17, 2025 14:12:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+const diff = now - startDate;
+
+const years = Math.floor(diff / (1000*60*60*24*365));
+const days = Math.floor((diff % (1000*60*60*24*365)) / (1000*60*60*24));
+const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+const seconds = Math.floor((diff % (1000*60)) / 1000);
+
+document.getElementById("years").innerHTML = years;
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
+
+</body>
+</html>
