@@ -583,7 +583,59 @@ our friends supported us through every moment.
 
 </section>
 
-<script>
+<section class="page">
+
+<h1>Send Your Message</h1>
+
+<form action="send-message.php" method="POST" class="message-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+</section>
+
+<style>
+.message-form{
+  display:flex;
+  flex-direction:column;
+  max-width:500px;
+  margin:20px auto;
+  gap:15px;
+}
+
+.message-form input,
+.message-form textarea{
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  font-size:16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.message-form textarea{
+  resize:none;
+  min-height:120px;
+}
+
+.message-form button{
+  padding:12px;
+  font-size:16px;
+  font-weight:bold;
+  background:#38bdf8;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.message-form button:hover{
+  background:#0ea5e9;
+}
+  </style>
+    
+    <script>
 
 let pages=document.querySelectorAll(".page");
 let current=0;
