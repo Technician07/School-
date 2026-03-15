@@ -461,8 +461,6 @@ Despite the long and tiring journey, he always taught us with great energy and e
 शिक्षणका साथसाथै उहाँले विद्यालयको लेखापाल (Accountant) को रूपमा सम्पूर्ण आर्थिक हिसाब-किताब पनि धेरै इमानदारीका साथ सम्बहाल्नुभयो। अफिसमा हिसाब मिलाउँदा जति गम्भीर देखिनुहुन्थ्यो, कक्षाकोठामा हामीसँग त्यति नै स्नेही हुनुहुन्थ्यो। उहाँले हामीलाई सधैं अनुशासनमा रहन र आर्थिक पारदर्शिताको महत्वबारे व्यावहारिक ज्ञान दिनुभयो। वास्तवमै, उहाँको बहुआयामिक व्यक्तित्वले विद्यालयको प्रशासन र हाम्रो सिकाइ दुवैलाई राम्रो बनाउनुभयो।</strong></p>
 </div>
 
-</div>
-
 <div class="nav">
 <button onclick="prevPage()">Back</button>
 <button onclick="nextPage()">Our Batch</button>
@@ -480,7 +478,7 @@ Despite the long and tiring journey, he always taught us with great energy and e
 
 <div class="student-card">
 <img src="1773472594513.jpg">
-<div class="student-info"><h4>Alisha Kunwar</h4> <p>Currently Living: Dhangadhi <p>College: CCS</p></div>
+<div class="student-info"><h4>Alisha Kunwar</h4> <p>Currently Living: Dhangadhi<p/><p>College: CCS</p></div>
 </div>
 
 <div class="student-card">
@@ -603,16 +601,12 @@ Send Message
 </section>
 
 <script>
-
 let pages=document.querySelectorAll(".page");
 let current=0;
 
-let pages = document.querySelectorAll(".page");
-let current = 0;
-
 function showPage(i){
 pages[current].classList.remove("active");
-current = i;
+current=i;
 pages[current].classList.add("active");
 }
 
@@ -630,26 +624,28 @@ showPage(current-1);
 
 /* TIMER */
 
-let startDate = new Date("2024-04-01").getTime();
+let startDate=new Date("2024-04-01").getTime();
 
 function updateTimer(){
 
-let now = new Date().getTime();
-let diff = now - startDate;
+let now=new Date().getTime();
+let diff=now-startDate;
 
-let seconds = Math.floor(diff/1000);
-let minutes = Math.floor(seconds/60);
-let hours = Math.floor(minutes/60);
-let days = Math.floor(hours/24);
-let years = Math.floor(days/365);
+let seconds=Math.floor(diff/1000);
+let minutes=Math.floor(seconds/60);
+let hours=Math.floor(minutes/60);
+let days=Math.floor(hours/24);
+let years=Math.floor(days/365);
 
-document.getElementById("years").innerText = years;
-document.getElementById("days").innerText = days % 365;
-document.getElementById("hours").innerText = hours % 24;
-document.getElementById("minutes").innerText = minutes % 60;
-document.getElementById("seconds").innerText = seconds % 60;
+document.getElementById("years").innerText=years;
+document.getElementById("days").innerText=days%365;
+document.getElementById("hours").innerText=hours%24;
+document.getElementById("minutes").innerText=minutes%60;
+document.getElementById("seconds").innerText=seconds%60;
 
 }
 
 setInterval(updateTimer,1000);
+
+  
   
